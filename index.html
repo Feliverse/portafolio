@@ -8,12 +8,20 @@
 </head>
 <body>
    <header>
-    <nav>aqui va la barra de navegacion</nav>
+    <nav class="topnav" id="myTopnav">
+        <a href="#inicio" class="active">Home</a>
+        <a href="#proyectos">Portafolio</a>
+        <a href="#acerca de mi">Acerca de mi</a>
+        <a href="#contactame">Contactame</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars">   click   </i>
+        </a>
+    </nav>      
    </header>
    <main>
-    <section id="inicio">aqui va el home</section>
+    <section id="inicio" class="inicio dark">aqui va el home</section>
     <section id="proyectos">aqui van los proyectos</section>
-    <section id="acercaDeMi">aqui la seccion acerca de mi</section>
+    <section id="acercaDeMi" class="secction white">aqui la seccion acerca de mi</section>
     <section id="contactame">contactame</section>
    </main>
    <footer>aqui va el footer</footer> 
