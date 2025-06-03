@@ -4,9 +4,27 @@
     box-sizing: border-box;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3e3c3c;
+    padding: 1rem;   
+}
+
+header h2 {
+    color: #fff;
+}
+
+.fa-bars {
+    color: #fff;
+}
+
 #inicio {
     height: 90vh;
     width: 100vw;
+    display: flex;
+    align-items: center;
 
     background-color: #1c1a19;
     background-image: url(img/illustration-header-mobile.svg);
@@ -15,7 +33,9 @@
 }
 
 .contenidoHome {
-    margin: auto 7%
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.5rem;
 }
 
 h1 {
@@ -33,7 +53,6 @@ h1 {
     font-size: 1.5rem;
     line-height: 2rem;
     color: #fff5e1;
-
 }
 
 .descripcionHome {
@@ -42,6 +61,17 @@ h1 {
     font-size: 1rem;
     line-height: 1.5rem;
     color: #fff;
+}
+
+.redesSociales {
+    display: flex;
+    gap: 1rem;
+}
+
+.fa-brands {
+    color: #fff;
+    padding: 4% 0;
+    font-size: 1.4rem;
 }
 
 #proyectos {
@@ -55,8 +85,28 @@ h1 {
     
 }
 
+/* Seccion Acerca de Mi  */
+
 #acercaDeMi {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
-    background-color:bisque;
+    background-color: #1c1a19;
 }
+
+.top h2 {
+    font-family: 'Crete Round', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    font-weight: 400;
+    font-size: 4.5rem;
+    line-height: 88px;
+    letter-spacing: 0.37px;
+    color: #ff6b00;
+}
+
+.top p {
+    font-family: 'Inter', Arial;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #f4f5f7;
+}
+
