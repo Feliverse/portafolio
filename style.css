@@ -103,7 +103,6 @@ h1 {
     background-image: url(img/illustration-about-me-mobile.svg);
     background-repeat: no-repeat;
     background-position: right bottom;
-
     height: 100vh;
     display: flex;
     flex-direction: column;
