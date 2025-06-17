@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'inter',serif;
 }
 
 header {
@@ -18,6 +19,18 @@ header h2 {
 
 .fa-bars {
     color: #fff;
+}
+
+.nav-links {
+
+    height: 100%;
+    font-family: 'Inter',serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.nav-links li {
+    font-size: 1rem;
 }
 
 #inicio {
@@ -63,6 +76,10 @@ h1 {
     color: #fff;
 }
 
+.contEscritorio h2 {
+    padding: 1rem 0;
+}
+
 .redesSociales {
     display: flex;
     gap: 1rem;
@@ -77,6 +94,56 @@ h1 {
 #proyectos {
     height: 100vh;
     width: 100vw;
+}
+
+.container {
+  position: relative;
+  max-width: 770px;
+  margin: 0 2rem;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 70%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.boton {
+    background-color: #f55800;
+    color: #fff;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #contactame {
@@ -235,8 +302,39 @@ nav {
     cursor: pointer;
 }
 
-/* Media Query for larger screens */
-@media (min-width: 768px) {
+/* Modo Escritorio */
+@media (min-width: 770px) {
+    boby {
+      font-size: 24px;  
+    }
+    
+    header {
+        justify-content: space-around;
+        gap: 15rem;
+
+    }
+
+
+    #inicio {
+        background-image: url(./img/Illustration-header.svg);
+        background-size: 45%;
+    }
+
+    .contenidoHome {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 4.5rem;
+    }
+
+    .contEscritorio {
+        max-width: 30vw;
+    }
+
+    .redesSociales {
+        flex-direction: column;
+        justify-content: center;
+    }
+
     #acercaDeMi {
         padding: 3rem;
     }

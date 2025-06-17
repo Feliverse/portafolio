@@ -26,11 +26,13 @@
     <main>
         <section id="inicio"> 
           <div class="contenidoHome">
+            <div class="contEscritorio">
             <h1>Hola, <br> Soy Felipe</h1>
             <h2 class="subtituloHome">Soy un Desarrollador de Software</h2>
             <p class="descripcionHome">Tienes una idea increíble: un producto, una función, o una web. Mi misión es transformarla en realidad digital.
                 <br>He construido historias de <br> éxito para otros, pixel <br> a pixel, línea a línea. 
             </p>
+            </div>
             <div class="redesSociales">
                 <i class="fa-brands fa-x-twitter"></i>
                 <i class="fa-brands fa-github"></i>
@@ -40,7 +42,24 @@
             </div>
           </div>
         </section>
-        <section id="proyectos">aqui van los proyectos</section>
+        <section id="proyectos">
+            <div class="container">
+                <img src="/img/proyecto1.svg" alt="Imagen del proyecto 1" class="image">
+                <p class="boton"> Ver el proyecto </p>
+                <div class="overlay">
+                    <div class="text">
+                        <h2>Titulo del proyecto</h2>
+                        <p>descripcion del proyecto</p>
+                        <div class="ContenedorTech">
+                            <div class="tech">HTML</div>
+                            <div class="tech">Bootstrap</div>
+                            <div class="tech">Ruby</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
         <section id="acercaDeMi">
             <div class="top">
                 <h2>Acerca de mi</h2>
@@ -80,7 +99,27 @@
                 </div>
             </div>
         </section>
-        <section id="contactame">contactame</section>
+        <section id="contactame">
+            <form action="https://formspree.io/f/mblygpyg" method="post">
+  <ul>
+    <li>
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="user_name" />
+    </li>
+    <li>
+      <label for="mail">Correo electrónico:</label>
+      <input type="email" id="mail" name="user_mail" />
+    </li>
+    <li>
+      <label for="msg">Mensaje:</label>
+      <textarea id="msg" name="user_message"></textarea>
+    </li>
+  </ul>
+  <li class="button">
+  <button type="submit">Envíe su mensaje</button>
+</li>
+</form>
+        </section>
     </main>
     <footer>aqui va el footer</footer> 
     <script src="app.js"></script>
