@@ -96,10 +96,14 @@ h1 {
     width: 100vw;
 }
 
+.proyectoN {
+  max-width: 360px;
+  margin: 0 2rem;  
+}
+
 .container {
   position: relative;
-  max-width: 770px;
-  margin: 0 2rem;
+  
 }
 
 .image {
@@ -122,7 +126,7 @@ h1 {
 }
 
 .container:hover .overlay {
-  height: 70%;
+  height: 100%;
 }
 
 .text {
@@ -217,11 +221,14 @@ h1 {
   cursor: pointer;
 }
 
+
+
 #contactame {
     height: 100vh;
     width: 100vw;
     
 }
+
 
 /* Seccion Acerca de Mi  */
 
